@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#login_area{
+    padding: 80px 30px;
+    margin-top: 150px;
+
+}
+#transaction_area{
+    margin-top: 150px;
+    display: none;
+}

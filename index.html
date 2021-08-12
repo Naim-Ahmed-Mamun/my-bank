@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Bank</title>
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- css style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div id="login_area" class="shadow-lg rounded-2">
+                <h2 class="mb-4">Welcome to Pioneer Bank</h2>
+                <form action="">
+                    <input type="text" name="name" class="form-control mb-3" required
+                        placeholder="Enter Your Name">
+                    <input type="email" name="email" class="form-control mb-3" required
+                        placeholder="Enter Your Email">
+                    <button class="btn btn-success" id="login">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- transaction area start -->
+    <section>
+        <div id="transaction_area">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-4">
+                        <div class="deposit_box bg-warning p-5 rounded-2 shadow-lg mb-5">
+                            <h3 class="fs-1 text-white">Deposit</h3>
+                            <strong class="fs-2 text-white">$ <span id="currentDeposit">00</span></strong>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="bg-secondary p-5 rounded-2 shadow-lg mb-5">
+                            <h3 class="fs-1 text-white">Withdraw</h3>
+                            <strong class="fs-2 text-white">$ <span id="currentWithdraw">00</span></strong>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bg-info p-5 rounded-2 shadow-lg mb-5">
+                            <h3 class="fs-1 text-white">Amount</h3>
+                            <strong class="fs-2 text-white">$ <span id="currentAmount">1200</span></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-5">
+                        <div class="p-5 shadow-lg">
+                            <input type="text" id="deposit_amount" class="form-control mb-3" 
+                             placeholder="Enter Your Deposit Amount">
+                            <button class="btn btn-success" id="add_deposit">Deposit</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-5">
+                        <div id="withdraw_amount" class="p-5 shadow-lg">
+                            <input type="text" id="withdrawAmount" class="form-control mb-3" placeholder="Enter Your withdraw Amount">
+                            <button class="btn btn-success" id="addWithdraw">Withdraw</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
